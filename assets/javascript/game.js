@@ -27,7 +27,7 @@ document.onkeypress = function(event) {
         document.querySelector(".wins").innerHTML = "Wins: " + winScore;
         document.querySelector(".guessesLft").innerHTML = "Guesses left: " + guessesLeft;
         document.querySelector(".result").innerHTML = "You win! Try again!";
-        document.querySelector(".guessesBox").innerHTML = "Guesses so far:";
+        document.querySelector(".guessesBox").innerHTML = "";
         computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
         console.log("The player guessed the letter: " + userGuess);
         console.log("---------------------------------");
@@ -39,7 +39,7 @@ document.onkeypress = function(event) {
     	guessesLeft--;
     	lettersGuessed.push(userGuess);
     	document.querySelector(".guessesLft").innerHTML = "Guesses left: " + guessesLeft;
-    	document.querySelector(".guessesBox").innerHTML = "Guesses so far: " + lettersGuessed;
+    	document.querySelector(".guessesBox").innerHTML = lettersGuessed;
     	document.querySelector(".result").innerHTML = "";
     	console.log("The player guessed the letter: " + userGuess);
     }
@@ -51,7 +51,7 @@ document.onkeypress = function(event) {
     	loseScore++;
     	document.querySelector(".losses").innerHTML = "Losses: " + loseScore;
     	document.querySelector(".guessesLft").innerHTML = "Guesses left: " + guessesLeft;
-    	document.querySelector(".guessesBox").innerHTML = "Guesses so far:";
+    	document.querySelector(".guessesBox").innerHTML = "";
     	computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
     	console.log("---------------------------------");
         console.log("The computer has now guessed the letter: " + computerGuess);
