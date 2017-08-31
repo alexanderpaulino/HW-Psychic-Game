@@ -1,0 +1,12 @@
+body, html {
+	margin: 0 auto;
+	background-color: black;
+	background-image:;
+	color: #305AE2;
+	font-weight: bold;
+}
+
+.gameBox {
+	padding: 20px;
+	margin: 20px;	
+}
