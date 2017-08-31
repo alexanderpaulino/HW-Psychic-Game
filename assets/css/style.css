@@ -1,15 +1,22 @@
 body, html {
 	margin: auto;
 	background-color: black;
-	background-image:;
 	color: #305AE2;
 	font-weight: bold;
 }
 
 .gameBox {
 	padding: 20px;
+	min-height: 350px;
 	margin: 4% 30% 10% 30%;
-	text-align: center;	
+	text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #305AE2;
+}
+
+hr {
+	border-color: #305AE2;
 }
 
 .title {

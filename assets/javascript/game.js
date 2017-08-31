@@ -39,7 +39,7 @@ document.onkeypress = function(event) {
     	guessesLeft--;
     	lettersGuessed.push(userGuess);
     	document.querySelector(".guessesLft").innerHTML = "Guesses left: " + guessesLeft;
-    	document.querySelector(".guessesBox").innerHTML = lettersGuessed;
+    	document.querySelector(".guessesBox").innerHTML = lettersGuessed.join(", ");
     	document.querySelector(".result").innerHTML = "";
     	console.log("The player guessed the letter: " + userGuess);
     }
